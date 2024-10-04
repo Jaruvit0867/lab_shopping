@@ -1,0 +1,79 @@
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.itemContainer:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.itemImage {
+  display: block;
+  height: auto;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.itemDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.itemName {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.itemCount, .itemPrice {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.itemPrice {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.actionButton {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actionButton:hover {
+  background-color: #e0e0e0;
+}
+
+.actionButton:active {
+  background-color: #d0d0d0;
+}
