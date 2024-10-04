@@ -1,5 +1,5 @@
-import Image from 'next/image';
 "use client";
+import Image from "next/image";
 import {
   IconButton,
   Stack,
@@ -8,7 +8,6 @@ import {
 } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
-import Image from "next/image";
 import React from "react";
 import styles from './ItemCart.module.css';
 
