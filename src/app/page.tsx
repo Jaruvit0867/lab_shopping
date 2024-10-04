@@ -1,13 +1,9 @@
 "use client";
 
 import {
-  IconButton,
   Stack,
   Typography,
-  Grid2 as Grid,
 } from "@mui/material";
-import AddIcon from "@mui/icons-material/Add";
-import RemoveIcon from "@mui/icons-material/Remove";
 import React from "react";
 import ItemCart from "./item-cart";
 
@@ -16,13 +12,13 @@ export default function Home() {
   const [totalPrice, setTotalPrice] = React.useState(0);
 
   const handleIncremental = (price: number) => {
-    setTotal(prevTotal => prevTotal + 1);
-    setTotalPrice(prevTotalPrice => prevTotalPrice + price);
+    setTotal((prevTotal) => prevTotal + 1);
+    setTotalPrice((prevTotalPrice) => prevTotalPrice + price);
   };
 
   const handleIncrementaldel = (price: number) => {
-    setTotal(prevTotal => Math.max(prevTotal - 1, 0));
-    setTotalPrice(prevTotalPrice => Math.max(prevTotalPrice - price, 0));
+    setTotal((prevTotal) => Math.max(prevTotal - 1, 0));
+    setTotalPrice((prevTotalPrice) => Math.max(prevTotalPrice - price, 0));
   };
 
   const myItems = [
@@ -54,7 +50,7 @@ export default function Home() {
             handleIncremantaldel={handleIncrementaldel}
           />
         ))}
-      <Stack direction="row" spacing={2}>
+      <Stack direction="row" spacing={2} mt={2}>
         <Typography variant="h4">Total Items:</Typography>
         <Typography variant="h4">{total.toLocaleString()} item</Typography>
         <Typography variant="h4">Total Price:</Typography>
